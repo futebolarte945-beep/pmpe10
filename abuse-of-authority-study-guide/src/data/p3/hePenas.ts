@@ -1,0 +1,43 @@
+import type { QuadroPenal } from "../tipos";
+
+export const quadroPenasP3: QuadroPenal = {
+  id: "quadro-penas-p3",
+  selo: "Quadro geral · Lei 8.072/1990 + tipos puxados",
+  titulo: "Hediondos, penas-base e o que a prova cobra à margem",
+  intro:
+    "A Lei 8.072 quase não comina pena: ela **etiqueta**. As penas moram no CP, no Estatuto do Desarmamento, no ECA, na Lei 2.889, na 15.358. Memorize a etiqueta (está no rol?) e a faixa. Tentativa reduz 1/3 a 2/3 sobre essas penas.",
+  linhas: [
+    { ref: "121 caput + extermínio", conduta: "Homicídio simples em grupo de extermínio (1 só agente basta)", pena: "**Reclusão 6–20**", obs: "Art. 1º, I · simples «comum» NÃO entra" },
+    { ref: "121 § 2º", conduta: "Homicídio qualificado (qualquer inciso vigente)", pena: "**Reclusão 12–30**", obs: "Privilegiado-qualificado: fora da hediondez" },
+    { ref: "121-A", conduta: "Feminicídio (tipo autônomo — Lei 14.994/2024)", pena: "**Reclusão 20–40**", obs: "I-B · aumento 1/3 a 1/2 (§ 2º)" },
+    { ref: "121-B", conduta: "Vicaricídio (Lei 15.384/2026)", pena: "**Reclusão 20–40**", obs: "I-C · aumento 1/3 a 1/2" },
+    { ref: "129 §§ 2º/3º", conduta: "Lesão gravíssima ou seguida de morte (I-A: farda, toga ou escola)", pena: "**Penas do 129 §§ 2º e 3º**", obs: "Leve/grave simples: fora" },
+    { ref: "157 § 2º V", conduta: "Roubo com restrição de liberdade da vítima", pena: "**Reclusão 4–10 + majorante**", obs: "II, a" },
+    { ref: "157 § 2º-A I / § 2º-B", conduta: "Roubo com arma de fogo (ou de uso proibido/restrito)", pena: "**+2/3 ou pena em dobro**", obs: "II, b · arma branca NÃO" },
+    { ref: "157 § 3º", conduta: "Roubo com lesão grave ou latrocínio (morte)", pena: "**7–18 (lesão) · 20–30 (morte)**", obs: "II, c" },
+    { ref: "158 § 3º", conduta: "Extorsão-relâmpago (restrição de liberdade / lesão / morte)", pena: "**6–12 · ou penas do 159 §§ 2º/3º**", obs: "III · § 2º clássico saiu da remissão" },
+    { ref: "159", conduta: "Extorsão mediante sequestro (caput e §§ 1º–3º)", pena: "**8–15 / 12–20 / 16–24 / 24–30**", obs: "IV · § 4º delação −1/3 a 2/3" },
+    { ref: "213", conduta: "Estupro (caput e §§ 1º e 2º)", pena: "**6–10 / 8–12 / 12–30**", obs: "V · caput já é hediondo" },
+    { ref: "217-A", conduta: "Estupro de vulnerável (caput e §§ 1º, 3º e 4º)", pena: "**8–15 / 10–20 / 12–30**", obs: "VI · § 2º VETADO · Súm. 593/STJ" },
+    { ref: "267 § 1º", conduta: "Epidemia com resultado morte", pena: "**Reclusão 10–15**", obs: "VII · sem morte = fora" },
+    { ref: "273", conduta: "Falsificação/adulteração de produto terapêutico ou medicinal", pena: "**Reclusão 10–15**", obs: "VII-B · perigo (sem lesão)" },
+    { ref: "218-B", conduta: "Favorecimento da prostituição/exploração sexual de criança, adolescente ou vulnerável", pena: "**Reclusão 4–10**", obs: "VIII · quem paga também (§ 1º)" },
+    { ref: "155 § 4º-A", conduta: "Furto com explosivo ou artefato de perigo comum", pena: "**Reclusão 4–10**", obs: "IX" },
+    { ref: "122 + § 4º", conduta: "Induzimento a suicídio/automutilação via rede/tempo real", pena: "**Caput 6m–2a · + até o dobro**", obs: "X · offline = fora" },
+    { ref: "148 § 1º IV", conduta: "Sequestro/cárcere privado de menor de 18 anos", pena: "**Reclusão 2–5**", obs: "XI" },
+    { ref: "149-A + § 1º II", conduta: "Tráfico de pessoas contra criança ou adolescente", pena: "**4–8 + metade**", obs: "XII · adulto = fora do rol" },
+    { ref: "Lei 2.889", conduta: "Genocídio (arts. 1º, 2º e 3º)", pena: "**Penas do 121 § 2º / 129 § 2º etc.**", obs: "P.ú., I" },
+    { ref: "ED, art. 16 § 2º", conduta: "Posse/porte de arma de fogo de uso **proibido**", pena: "**Reclusão 4–12**", obs: "P.ú., II · restrito NÃO (desde 2019)" },
+    { ref: "ED, art. 17", conduta: "Comércio ilegal de armas", pena: "**Reclusão 6–12 + multa**", obs: "P.ú., III" },
+    { ref: "ED, art. 18", conduta: "Tráfico internacional de arma/acessório/munição", pena: "**Reclusão 8–16 + multa**", obs: "P.ú., IV" },
+    { ref: "12.850", conduta: "Organização criminosa direcionada a hediondo/equiparado", pena: "**Reclusão 3–8** (Lei 12.850)", obs: "P.ú., V · org. «genérica» fora" },
+    { ref: "CPM", conduta: "Crimes militares com identidade com o art. 1º", pena: "**Penas do CPM**", obs: "P.ú., VI · Lei 14.688/2023" },
+    { ref: "ECA 240–244-A", conduta: "Pornografia, registro, aliciamento, exploração sexual de criança (redação 15.487/2026)", pena: "**Faixas do ECA (em regra 4–8 / 4–10)**", obs: "P.ú., VII" },
+    { ref: "Lei 15.358", conduta: "Domínio social estruturado (art. 2º) e favorecimento (art. 3º)", pena: "**20–40 · 12–20 + multa**", obs: "P.ú., VIII · Marco Antifacção" },
+    { ref: "Equiparados CF", conduta: "Tortura · tráfico de drogas · terrorismo", pena: "**Leis 9.455, 11.343 e 13.260**", obs: "Art. 2º · NÃO estão no art. 1º · tráfico privilegiado NÃO equipara" },
+    { ref: "Art. 8º", conduta: "Associação criminosa (288) com fim hediondo/equiparado", pena: "**Reclusão 3–6**", obs: "Delação: −1/3 a 2/3 se desmantelar" },
+    { ref: "Art. 9º", conduta: "Aumento de metade (vítima do antigo art. 224)", pena: "**Letra morta**", obs: "224 revogado em 2009" },
+  ],
+  macete:
+    "A lei **etiqueta**, o CP **pune**. Três tetos de rei: **feminicídio, vicaricídio e domínio social = 20 a 40**. Arma: só **proibida** (não restrita). Equiparados = **3T** (tortura, tráfico, terrorismo) no **art. 2º**. Art. 9º = **fantasma**.",
+};
